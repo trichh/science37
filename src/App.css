@@ -1,0 +1,119 @@
+body {
+  background-color: #F0F0F0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.container h1 {
+  color: #2E2E2E;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+/* search component styling */
+.search {
+  padding: 0 2rem;
+}
+.searchInput {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.searchInput svg {
+  left: 10px;
+  position: absolute;
+  top: 11px;
+}
+.searchInput input[name="keyword"] {
+  border: solid 1px #9EA0A4;
+  border-radius: 4px;
+  padding: 1rem 0 1rem 2.5rem;
+  width: calc(100% - 2.5rem);
+}
+/* hashtag filter section styling */
+.hashtagFilters {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+  padding: .1rem 2rem 0 2rem;
+}
+.hashtagFilters > p {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+/* tweet feed styling */
+.tweetContainer {
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+  margin: 2rem 0;
+}
+.tweet {
+  padding: 1rem 2rem;
+  position: relative;
+}
+.tweet:nth-child(odd) {
+  background-color: white;
+}
+.tweet:nth-child(even) {
+  background-color: #F0F0F0;
+}
+.tweet > p, .filterWrapper {
+  margin-left: 4rem;
+}
+.tweet > p:first-of-type {
+  margin-bottom: 0;
+}
+.tweet a {
+  color: #0272C2;
+  text-decoration: none;
+}
+.tweet img {
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+}
+.loadMore {
+  color: #0272C2;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* filter button styling */
+.filter, .selectedFilter {
+  display: inline-block;
+  padding-right: 1.5rem;
+}
+.filter p {
+  background-color: #D0EBF2;
+  border-radius: 25px;
+  color: #0272C2;
+  cursor: pointer;
+  margin: 0 0 1.5rem 0;
+  padding: .5rem 1rem;
+}
+.selectedFilter p {
+  border: solid 1px #D0EBF2;
+  border-radius: 25px;
+  color: #0272C2;
+  cursor: pointer;
+  margin: 0 0 1.5rem 0;
+  padding: .5rem 1rem;
+}
+/* media query for desktop layout */
+@media screen and (min-width: 1025px) {
+  .row:first-of-type {
+    position: relative;
+  }
+  .search {
+    padding: 0;
+    width: 600px;
+  }
+  .hashtagFilters {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 300px;
+  }
+  .tweetContainer {
+    margin-top: 0;
+    width: 600px;
+  }
+}
